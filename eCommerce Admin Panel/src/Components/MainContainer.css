@@ -1,0 +1,104 @@
+/* CustomerList.css */
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9; /* Default background color for rows */
+}
+.loading-container {
+  text-align: center;
+}
+.customer-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+.customer-table tbody tr:hover {
+  background-color: #e2e2e2;
+}
+
+.customer-table {
+  .action-buttons {
+    display: flex;
+  }
+}
+
+
+.edit {
+  padding: 5px 10px;
+  border: none;
+  background-color: #B0E1B7;
+  color: #008212;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.delete {
+  padding: 5px 10px;
+  border: none;
+  background-color: #EF9999;
+  color: #D90707;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+/* .customer-table button:hover {
+  background-color: #0056b3;
+}
+.customer-table button:hover {
+  background-color: #0056b3;
+} */
+
+/* customerList.css */
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  padding-top: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* customerList.css */
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  padding-top: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  padding-left: 270px; /* Adjusted padding to create space for the sidebar */
+}
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-250px); /* Hide sidebar by moving it off-screen */
+  }
+
+  .content {
+    padding-left: 20px; /* Adjust content padding to fill the space */
+  }
+}

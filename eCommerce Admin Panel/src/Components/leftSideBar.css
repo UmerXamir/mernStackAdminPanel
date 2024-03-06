@@ -1,0 +1,36 @@
+
+.sidebar {
+  width: 250px; /* Set the width of the sidebar */
+  height: 100%; /* Set the height to cover the whole page */
+  background-color: #333; /* Set the background color */
+  position: fixed; /* Fix the sidebar position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 80%; /* Adjust the logo size */
+}
+
+.menu {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.menu li {
+  padding: 15px 20px;
+  color: #fff; /* Set text color */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+.menu li:hover {
+  background-color: #555; /* Change background color on hover */
+}
