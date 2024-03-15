@@ -1,4 +1,4 @@
-import "./MainContainer.css";
+
 import LeftSidebar from "./leftSideBar";
 import CustomerList from "./customersListContainer";
 
@@ -7,8 +7,7 @@ const MainContainer = () => {
     <>
       <div className="container">
         <LeftSidebar />
-
-        <div className="content">
+        <div className="user-list-container">
           <CustomerList />
         </div>
       </div>

@@ -1,0 +1,42 @@
+
+.sidebar {
+  width: 250px; 
+  height: 100%; 
+  background-color: #333; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  overflow-y: auto; 
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 80%; 
+}
+
+.menu {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.menu li {
+  padding: 15px 20px;
+  color: #fff; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.menu li:hover {
+  background-color: #555; 
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-250px); /* Hide sidebar by moving it off-screen */
+  }
+}

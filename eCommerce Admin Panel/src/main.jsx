@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import MainContainer from './Components/mainContainer.jsx';
+import MainContainer from './Components/Customers/mainContainer.jsx';
 // import './index.css'
 import "./main.css";
 import {Provider} from 'react-redux'

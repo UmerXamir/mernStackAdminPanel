@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
-import "./MainContainer.css";
-
-import ReactLoading from "react-loading";
-import NewCustomerLayOver from "./newCustomerLayover";
-import "./CustomerList.css";
-import EditCustomerOverlay from "./editCustomerOverlay ";
 import { useDispatch, useSelector } from "react-redux";
-import { getUserList } from "../redux/slices/adminSlice";
+import ReactLoading from "react-loading";
+import { getUserList } from "../../redux/slices/adminSlice";
+import "./CustomerList.css";
+import AddEditCustomerOverlay from "./addEditCustomerOverlay";
 
 const CustomerList = (props) => {
   const state = useSelector((state) => state.admin);
@@ -104,16 +101,18 @@ const CustomerList = (props) => {
       </table>
 
       {showAddNewCustomer && (
-        <NewCustomerLayOver
+        <AddEditCustomerOverlay
           {...props}
           onClose={() => setShowAddNewCustomer(false)}
+          mode={"add"}
         />
       )}
 
       {showEditCustomer && (
-        <EditCustomerOverlay
+        <AddEditCustomerOverlay
           onClose={() => setShowEditCustomer(false)}
           customerData={editCustomerData}
+          mode={"edit"}
         />
       )}
     </div>

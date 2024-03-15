@@ -77,4 +77,27 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+//getAllUsers
+
+router.post("/adduser", async (req, res) => {
+  try {
+console.log("req.body", req.body);
+    
+const user = new User({
+      customerName: req.body.customerName,
+      userName: req.body.userName,
+      email: req.body.email,
+      photo: req.body.user,
+    });
+
+    // Save the user to the database
+    await user.save();
+    res.status(200).json(user);
+  } catch (error) {
+    console.log('errrror',error);
+    res.status(500).json(error);
+  }
+});
+
+
 module.exports = router;

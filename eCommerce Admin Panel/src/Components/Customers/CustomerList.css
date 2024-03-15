@@ -9,7 +9,7 @@
 .customer-table td {
   padding: 10px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9; /* Default background color for rows */
+  background-color: #f9f9f9; 
 }
 .loading-container {
   text-align: center;
@@ -50,55 +50,30 @@
   margin-right: 5px;
   border-radius: 5px;
 }
-/* .customer-table button:hover {
-  background-color: #0056b3;
-}
-.customer-table button:hover {
-  background-color: #0056b3;
-} */
 
-/* customerList.css */
-
-.container {
-  display: flex;
-}
-
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: #333;
-  padding-top: 20px;
-}
-
-.content {
+.user-list-container {
   flex: 1;
   padding: 20px;
 }
 
-/* customerList.css */
 
 .container {
   display: flex;
 }
 
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: #333;
-  padding-top: 20px;
-}
 
-.content {
+
+.user-list-container {
   flex: 1;
   padding: 20px;
   padding-left: 270px; /* Adjusted padding to create space for the sidebar */
 }
 @media (max-width: 768px) {
-  .sidebar {
-    transform: translateX(-250px); /* Hide sidebar by moving it off-screen */
-  }
 
-  .content {
-    padding-left: 20px; /* Adjust content padding to fill the space */
+  .user-list-container {
+    padding-left: 20px; /* Adjust user-list-container padding to fill the space */
   }
+}
+.add-new-button{
+    width: 25%;
 }
